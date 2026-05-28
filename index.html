@@ -4,19 +4,21 @@
   <meta charset="UTF-8" />
   <title>Domain for Sale | computeverse.ai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Protest+Riot&display=swap" rel="stylesheet" />
   
   <style>
     body {
       margin: 0;
-      /* Changed to min-height so content can expand vertically on mobile */
       min-height: 100vh; 
       font-family: "League Spartan", sans-serif;
       color: #ffffff;
-      background: linear-gradient(-45deg, #1e1b4b, #311042, #111827, #0f172a);
+      /* Restored your original vibrant background gradient */
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
       background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
+      animation: gradientBG 12s ease infinite;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,14 +29,13 @@
       font-family: "Protest Riot", sans-serif;
     }
 
-    /* Smooth animated gradient background */
     @keyframes gradientBG {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
 
-    /* Prevents long emails or strings from breaking the layout */
+    /* Prevents long emails or strings from breaking the mobile layout */
     .break-words {
       word-break: break-word;
       overflow-wrap: break-word;
@@ -43,30 +44,36 @@
 </head>
 <body>
 
-  <div class="max-w-3xl w-full mx-auto bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg border border-white border-opacity-10 rounded-2xl p-6 sm:p-10 md:p-12 text-center shadow-2xl">
+  <!-- Dark glass container to make the bright text pop against the colorful background -->
+  <div class="max-w-4xl w-full mx-auto bg-black bg-opacity-25 backdrop-filter backdrop-blur-md border border-white border-opacity-20 rounded-3xl p-8 sm:p-12 md:p-16 text-center shadow-2xl">
     
-    <span class="inline-block bg-indigo-500 bg-opacity-20 text-indigo-300 font-semibold tracking-wider text-sm sm:text-base md:text-lg px-4 py-1.5 rounded-full mb-6 border border-indigo-500 border-opacity-30">
-      WWW.COMPUTEVERSE.AI
-    </span>
+    <!-- Domain Name -->
+    <div class="text-xl sm:text-2xl md:text-3xl font-bold tracking-widest text-yellow-300 mb-4 uppercase drop-shadow-md">
+      "WWW.COMPUTEVERSE.AI"
+    </div>
     
-    <h1 class="text-3xl sm:text-4xl md:text-5xl text-yellow-400 font-bold mb-4 tracking-wide leading-tight">
+    <!-- Main Headline -->
+    <h1 class="text-4xl sm:text-5xl md:text-6xl text-white font-bold mb-6 tracking-wide leading-tight drop-shadow-lg">
       Domain is Available for Sale!
     </h1>
     
-    <h2 class="text-base sm:text-lg md:text-xl font-normal text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-      AI-Powered Computing Universe — a premium domain for computing innovation, artificial intelligence, and its future advancements.
+    <!-- Description -->
+    <h2 class="text-xl sm:text-2xl md:text-3xl font-medium text-gray-50 max-w-3xl mx-auto mb-10 leading-relaxed drop-shadow-md">
+      AI-Powered Computing Universe — a domain for computing innovation, artificial intelligence, and its future advancements.
     </h2>
     
-    <div class="bg-black bg-opacity-20 rounded-xl p-4 sm:p-6 mb-8 max-w-md mx-auto border border-white border-opacity-5">
-      <span class="text-xs uppercase tracking-widest text-gray-400 block mb-1">Asking Price Range</span>
-      <p class="text-2xl sm:text-3xl font-bold text-white">
+    <!-- Pricing Section -->
+    <div class="bg-black bg-opacity-40 rounded-2xl p-6 sm:p-8 mb-10 max-w-2xl mx-auto border border-white border-opacity-10">
+      <h1 class="text-lg sm:text-xl md:text-2xl uppercase tracking-widest text-gray-300 block mb-3 font-heading drop-shadow-md">Asking Price Range:</h1>
+      <p class="text-3xl sm:text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
         USD $10,000 – $100,000
       </p>
     </div>
     
-    <div class="mt-4">
-      <a href="mailto:sherazbaig928@gmail.com" class="inline-block w-full sm:w-auto bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-sm sm:text-base px-6 py-3.5 rounded-xl transition duration-300 ease-in-out transform hover:-translate-y-0.5 shadow-lg break-words">
-        Contact Me for EOIs: <span class="block sm:inline text-indigo-900 font-semibold">sherazbaig928@gmail.com</span>
+    <!-- Action Button -->
+    <div class="mt-6">
+      <a href="mailto:sherazbaig928@gmail.com" class="inline-block w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg sm:text-xl md:text-2xl px-8 py-5 rounded-2xl transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-xl break-words">
+        Contact Me for EOIs: <br class="block sm:hidden" /><span class="font-extrabold sm:ml-2">sherazbaig928@gmail.com</span>
       </a>
     </div>
 
